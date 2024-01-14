@@ -1,0 +1,44 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  display: grid;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 5rem;
+
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1/-1;
+  border: solid 1px black;
+}
+
+.nav div {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  /* border: solid black 1px; */
+}
+
+.about {
+  background-color: blanchedalmond;
+  border: solid 1px black;
+  height: 80vh;
+  width: 1fr;
+}
+.project {
+  color: aqua;
+  grid-column: 2/-1;
+  width: 2fr;
+  border: solid 1px black;
+}
