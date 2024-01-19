@@ -13,6 +13,7 @@
       }
       h1 {
         font-size: 2.4rem;
+        line-height: 1.2;
       }
 
       .container {
@@ -32,6 +33,11 @@
         HCI.
       </p>
       <p>
+        As a designer, I love crafting icons and graphic user interfaces. and As
+        a HCI researcher, I mainly focus on how human will interact with Natrual
+        Language Interface (NLI).
+      </p>
+      <p>
         This site is under construction. I am currently learning JavaScript and
         React to build this site from zero.
       </p>
@@ -40,5 +46,31 @@
         <a href="https://anxin.design">site</a> to see my old works.
       </p>
     </div>
+
+    <script>
+      window.onload = function () {
+        var fonts = [
+          "Roboto",
+          "Lato",
+          "Oswald",
+          "Roboto Slab",
+          "Inter",
+          "JetBrsains Mono",
+          "Noto Sans",
+          "Noto Serif",
+          "Lemon",
+        ]; // 想要的字体列表
+        var randomFont = fonts[Math.floor(Math.random() * fonts.length)]; // 随机选择一个字体
+
+        var link = document.createElement("link");
+        link.href = "https://fonts.googleapis.com/css?family=" + randomFont;
+        link.rel = "stylesheet";
+
+        document.head.appendChild(link);
+
+        // 将body的字体设置为随机选择的字体
+        document.body.style.fontFamily = randomFont;
+      };
+    </script>
   </body>
 </html>
