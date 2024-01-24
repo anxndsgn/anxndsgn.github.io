@@ -1,0 +1,18 @@
+body {
+  background-color: #fffbf9;
+}
+h1 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  opacity: 0.8;
+}
+
+p {
+  line-height: 1.6;
+  opacity: 0.7;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 6rem auto;
+}
