@@ -43,10 +43,10 @@ function App() {
         </p>
         <p>
           This site is under construction. I am currently learning JavaScript
-          and React to build this site from zero.
+          and React to build this site from scratch.
         </p>
         <p>
-          You can visit this <a href="https://anxin.design">site</a> to see my
+          You can visit this <a href="https://design.zeabur.app/">site</a> to see my
           old works.
         </p>
       </div>
