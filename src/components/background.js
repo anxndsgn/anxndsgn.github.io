@@ -87,5 +87,5 @@ export default function Background() {
     React.createElement(TextureMesh)
   );
 
-  return <div className="h-svh w-svw fixed top-0 left-0 -z-50">{texture}</div>;
+  return <div className="h-dvh w-dvw fixed top-0 left-0 -z-50">{texture}</div>;
 }
