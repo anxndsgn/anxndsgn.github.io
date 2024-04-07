@@ -10,7 +10,7 @@ export default function About() {
         <h1 className="text-4xl font-bold col-span-6">About</h1>
       </nav>
 
-      <div className="col-span-4 flex flex-col gap-4 text-2xl mt-14 ">
+      <div className="col-span-8 lg:col-span-4 flex flex-col gap-4 text-2xl mt-14 ">
         <p>你好，我是xin。</p>
         本科毕业于青岛大学，现在是浙江大学的工业设计工程硕士，研究人机交互。
         <p>
@@ -24,7 +24,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className="col-span-4 flex flex-col gap-4 text-2xl mt-14 font-light">
+      <div className="col-span-8 lg:col-span-4 flex flex-col gap-4 text-2xl mt-14 font-light">
         <p>Hi, I am Xin. </p>I graduated from Qingdao University with a
         bachelor's degree, and now I am a master's student in industrial design
         engineering at Zhejiang University, specializing in researching

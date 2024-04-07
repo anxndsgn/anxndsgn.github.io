@@ -12,11 +12,15 @@ export default function LOGOS() {
         <h1 className="text-4xl font-bold col-span-6">Logo & Icon</h1>
       </nav>
 
-      <div className={"grid mt-14 mb-14 grid-cols-4 gap-6"}>
+      <div
+        className={
+          "grid mt-14 mb-14 lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6"
+        }
+      >
         {LogoProjectData.map((project) => (
           <LOGO key={project.id} project={project} />
         ))}
-        <div className={"text-4xl font-light"}>
+        <div className={"text-2xl lg:text-4xl font-light"}>
           <p>
             如果你需要设计Icon，欢迎
             <a href={"mailto:anxanxx@gmail.com"} className={"underline"}>
