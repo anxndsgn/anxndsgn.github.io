@@ -7,12 +7,8 @@ const IDEProjectData = [
       aDesign: "https://competition.adesignaward.com/design.php?ID=149441",
     },
     description: [
-      "Birdy是一个设计用于唤起用户与生物互动的触感体验的音响，而不是一个几何物体。用户可以使用这只顶部的鸟形雕塑来管理他们的音乐播放。通过在不同方向摆动它，用户可以调整音量，跳到下一首或前一首歌曲等。除了音乐播放功能之外，Birdy还可以作为智能家居助手，以鸟叫声作为回应。其目标是创造更自然和情感上吸引人的用户体验。",
-
-      "Birdy is a speaker that is designed to evoke a tactile and interactive experience with a creature, rather than a geometric object. With intuitive controls, users can manage their music playback by using the bird as a game stick. By swinging it in different directions, users can adjust the volume, skip to the next or previous song, and more. In addition to its music-playing capabilities, Birdy also doubles as a smart home assistant that responds to various bird calls. Its aim is to create a more natural and emotionally engaging user experience.",
-
-      "The design of Birdy is inspired by the way bird breeders often stroke and interact with their pets. The bird is located at the top and the bottom is a conical speaker. It is designed to foster emotional connections between users and the device, creating a more natural and seamless user experience.",
-      "Birdy provides a more engaging way to control music playback. With its bird-shaped game stick, users can interact with their music in a unique and interesting way, making the experience feel more natural and intuitive. Designed to emulate the experience of touching and interacting with a live creature, Birdy provides a refreshing departure from traditional, lifeless speakers.",
+      "Birdy是一个用于唤起用户与生物互动的触感体验的音响，而不是与一个几何物体。用户可以使用这只顶部的鸟形雕塑来管理他们的音乐播放。通过在不同方向摆动它，用户可以调整音量，跳到下一首或前一首歌曲等。除了音乐播放功能之外，Birdy还可以作为智能家居助手，以鸟叫声作为回应。其目标是创造更自然和情感上吸引人的用户体验。",
+      "Birdy是我的本科毕业设计，获得了绍兴工业设计大赛优秀奖与意大利A’Design奖。",
     ],
     img: [
       "/imgs/birdy/01.png",
@@ -20,6 +16,7 @@ const IDEProjectData = [
       "/imgs/birdy/03.png",
       "/imgs/birdy/04.png",
       "/imgs/birdy/05.png",
+      "/imgs/birdy/06.png",
     ],
   },
   {
@@ -30,8 +27,8 @@ const IDEProjectData = [
     link: "https://www.youtube.com/embed/utkkCsSskik?si=sBQhcia2YaYwkfVf",
     description: [
       "科技能够让我们的生活变得更好，但是现在我们处在这样一种情况，那就是我们控制所有物品都是通过一种东西——屏幕。虽然屏幕非常直观与方便，但是每天出玻璃打交道太过无聊了。我们需要一些不一样的东西，重新利用我们的手，我们的触觉、嗅觉，而不是通过手机或其他屏幕。所以我的目标是设计一种物理体验，当你听音乐时能够与之进行有趣的互动。",
-      "Technology can make our lives better, but currently we are in a situation where we control everything through one thing - screens. Although screens are intuitive and convenient, dealing with glass all day can be boring. We need something different, something that allows us to use our hands, our sense of touch and smell, instead of relying on phones or other screens. So, my goal is to design a physical experience that allows for interesting interaction while listening to music.",
-      "That's why I created Flipping, a Bluetooth speaker that can be switched songs by flipping it. Through a small interaction, it provides listeners with a unique user experience.",
+      "我从零开始制作了Flipping，包括工业设计、结构设计与内部电路。首先是原型测试，草模验证成功之后，进行内部电路的迭代，不断打板-焊接-测试-修改，3D打印外壳，修改外部细节。电路测试完毕后刷入Arduino的Bootloader，刷入Arduino程序，通电测试。都测试无误后，最后喷漆，组装，完成。",
+      "Flipping是我第一个真正意义上的工业设计产品，而不是只活在屏幕上的设计。",
     ],
     img: [
       "/imgs/flipping/01.png",
@@ -52,9 +49,7 @@ const IDEProjectData = [
       easyEDA: "https://oshwhub.com/camcyano/arduinomini",
     },
     description: [
-      "Arduino Mini是一款小型微控制器板，适用于面包板和空间有限的场合。",
-      "The Arduino Mini is a small microcontroller board intended for use on breadboards and when space is at a premium. ",
-      "The 0.1 version is on EasyEDA.",
+      "Arduino Mini是一款小型微控制器板，适用可穿戴与小型化产品原型搭建与测试。",
     ],
     img: [
       "/imgs/arduinomini/01.png",
@@ -69,11 +64,8 @@ const IDEProjectData = [
     thumbnail: "/thumbnails/OpenWear.webp",
     link: "https://openwear.xyz",
     description: [
-      "The current prototype construction of wearable and electronic textile products involves the use of conductive yarn for sewing, enabling electrical connections for electronic components. However, troubleshooting and debugging after sewing can be problematic, and traditional embedded rapid prototyping tools are not suitable for this field. At the same time, the Lilypad Arduino development board and modules are gradually unable to meet the needs of makers, artists, and school classes. ",
-      "To address these issues, we introduced OpenWear: a toolkit for rapid prototyping and validation of wearable projects. OpenWear consists of three components: ",
-      "(1) OpenWear Core, which is an ESP-32 based development board that replaces the Lilypad; ",
-      "(2) OpenWear Module, a collection of electronic modules with sensors and actuators; and ",
-      "(3) OpenWear Thread, which connects the Core and Module. Along with an online wiki website and fully open sourced the hardware design. We embed magnets on the PCBs of the Core and Module, allowing them to be fixed to textiles. The connection is ensured by O-ring wire terminals at both ends of the Thread, ensuring fast connectivity.",
+      "现在的可穿戴与电子纺织品原型制作一般是使用导电纱线缝制，使电子器件实现电气连接，但缝纫之后的调试会变得麻烦，传统的快速原型搭建工具并不适合该领域。同时，Lilypad Arduino开发板与相应的模块随着时间的发展也逐渐无法满足创客、艺术家与学生们的需求。为了解决这些问题，本论文设计了OpenWear：一个可穿戴电路快速原型搭建与验证的工具包。OpenWear包括三个组件：（1）OpenWear Core，这是一个基于ESP-32的开发板，用于替代Lilypad；（2）OpenWear Module，一个带有传感器和执行器的电子模块集合；和（3）OpenWear Thread，将Core和Module连接起来的导线。除此之外，我们为OpenWear搭建一个在线wiki网站并完全开源了硬件设计。我们在Core和Module的PCB上嵌入磁铁，通过磁铁可以固定在纺织品上。加上Thread两端的O型环接线端子，确保了快速的连接。",
+      "OpenWear是我的研究生研究项目，方向为人机交互与可穿戴智能。",
     ],
     img: [
       "/imgs/openwear/01.png",

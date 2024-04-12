@@ -8,12 +8,12 @@ export async function generateStaticParams() {
 
 export default function Project({ params }) {
   const project = UIProjectData.find(
-    (project) => project.id.toString() === params.id,
+    (project) => project.id.toString() === params.id
   );
 
   return (
     <div className={"grid grid-cols-6 gap-6 relative"}>
-      <div className={"fixed w-1/5 text-sm font-light flex gap-2 flex-col"}>
+      <div className={"col-span-2 text-base font-light flex gap-2 flex-col"}>
         {project.description.map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
