@@ -64,7 +64,7 @@ const IDEProjectData = [
     thumbnail: "/thumbnails/OpenWear.webp",
     link: "https://openwear.xyz",
     description: [
-      "现在的可穿戴与电子纺织品原型制作一般是使用导电纱线缝制，使电子器件实现电气连接，但缝纫之后的调试会变得麻烦，传统的快速原型搭建工具并不适合该领域。同时，Lilypad Arduino开发板与相应的模块随着时间的发展也逐渐无法满足创客、艺术家与学生们的需求。为了解决这些问题，本论文设计了OpenWear：一个可穿戴电路快速原型搭建与验证的工具包。OpenWear包括三个组件：（1）OpenWear Core，这是一个基于ESP-32的开发板，用于替代Lilypad；（2）OpenWear Module，一个带有传感器和执行器的电子模块集合；和（3）OpenWear Thread，将Core和Module连接起来的导线。除此之外，我们为OpenWear搭建一个在线wiki网站并完全开源了硬件设计。我们在Core和Module的PCB上嵌入磁铁，通过磁铁可以固定在纺织品上。加上Thread两端的O型环接线端子，确保了快速的连接。",
+      "现在的可穿戴与电子纺织品原型制作一般是使用导电纱线缝制，使电子器件实现电气连接，但缝纫之后的调试会变得麻烦，传统的快速原型搭建工具并不适合该领域。同时，Lilypad Arduino开发板与相应的模块随着时间的发展也逐渐无法满足创客、艺术家与学生们的需求。为了解决这些问题，我设计了OpenWear：一个可穿戴电路快速原型搭建与验证的工具包。OpenWear包括三个组件：（1）OpenWear Core，这是一个基于ESP-32的开发板，用于替代Lilypad；（2）OpenWear Module，一个带有传感器和执行器的电子模块集合；和（3）OpenWear Thread，将Core和Module连接起来的导线。除此之外，我们为OpenWear搭建一个在线wiki网站并完全开源了硬件设计。我们在Core和Module的PCB上嵌入磁铁，通过磁铁可以固定在纺织品上。加上Thread两端的O型环接线端子，确保了快速的连接。",
       "OpenWear是我的研究生研究项目，方向为人机交互与可穿戴智能。",
     ],
     img: [
