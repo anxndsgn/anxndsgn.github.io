@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import Image from "next/image";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -32,13 +31,20 @@ export default function Home() {
           className="inline-flex w-fit hover:pointer-events-auto"
         >
           <h1>
-            <span className="hover:underline hover:pr-2">Hi, I am XIN</span>
+            <span className="hover:underline hover:pr-2">你好，我是XIN</span>
             <i className="ri-arrow-right-line "></i>
           </h1>
         </Link>
 
-        <p className="">Now postgraduate in Industrial Design Engineering.</p>
-        <p></p>
+        <p className="">工业设计工程硕士在读</p>
+        <p className="flex gap-4 ">
+          <a href="mailto:anxanxx@gmail.com" className="hover:underline">
+            Email
+          </a>
+          <a href="https://twitter.com/anxndsgn" className="hover:underline">
+            Twitter
+          </a>
+        </p>
         <h1 className=" font-bold">My Work</h1>
         <Link
           href={`ide`}
