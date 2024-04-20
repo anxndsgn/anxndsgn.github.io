@@ -16,14 +16,14 @@ export default function ProjectLayout({ children }) {
         <Link href={"/"} className=" flex ">
           <span className="hover:underline font-bold">Back</span>
         </Link>
-        <h1 className=" font-bold col-span-6">
+        <h1 className=" font-bold col-span-6 hidden md:block">
           Industrial Design & Engineering
         </h1>
       </nav>
 
       <div className={"grid grid-cols-10 relative mt-14 mb-14 "}>
-        <div className="fixed grid grid-cols-10 w-10/12">
-          <nav className="hidden md:flex flex-col gap-4 md:gap-6 text-2xl md:text-4xl col-span-2">
+        <div className="md:fixed grid grid-cols-10 w-10/12 mb-4">
+          <nav className=" md:flex flex-col gap-2 md:gap-4 lg:gap-6 text-xl md:text-2xl lg:text-4xl col-span-2">
             {IDEProjectData.map((project) => (
               <Link
                 href={`/ide/${project.id}`}
@@ -31,7 +31,7 @@ export default function ProjectLayout({ children }) {
                 className={"flex justify-items-center relative"}
               >
                 {currentPageId === project.id ? (
-                  <i className="ri-arrow-right-line  absolute -left-10"></i>
+                  <i className="ri-arrow-right-line  absolute md:-left-10 -left-5"></i>
                 ) : (
                   ""
                 )}

@@ -7,38 +7,50 @@ export default function ProjectLayout({ children }) {
   const currentPageId = useSelectedLayoutSegment();
 
   return (
-    <div className="w-10/12 m-auto mt-20 relative flex-col flex gap-6 ">
-      <nav className={"w-10/12 m-auto flex justify-between fixed z-10"}>
-        <Link href={"/"} className="text-4xl flex ">
+    <div className="w-10/12 m-auto mt-20 relative flex-col flex gap-6">
+      <nav
+        className={
+          "w-10/12 m-auto flex justify-between fixed text-2xl md:text-4xl z-10"
+        }
+      >
+        <Link href={"/"} className=" flex ">
           <span className="hover:underline font-bold">Back</span>
         </Link>
-        <h1 className="text-4xl font-bold col-span-6">Web & User Interface</h1>
+        <h1 className=" font-bold col-span-6 hidden md:block">
+          Web & User Interface
+        </h1>
       </nav>
 
-      <div className={"grid grid-cols-10 gap-6 relative mt-14 mb-14"}>
-        <nav className="flex flex-col gap-6 col-span-2 fixed">
-          {UIProjectData.map((project) => (
-            <Link
-              href={`/ui/${project.id}`}
-              key={project.id}
-              className={"flex justify-items-center relative"}
-            >
-              {currentPageId === project.id ? (
-                <i className="ri-arrow-right-line text-4xl absolute -left-10"></i>
-              ) : (
-                ""
-              )}
-              <p
-                className={`text-4xl ${currentPageId === project.id ? "underline" : ""}`}
+      <div className={"grid grid-cols-10 relative mt-14 mb-14 "}>
+        <div className="md:fixed grid grid-cols-10 w-10/12 mb-4">
+          <nav className=" md:flex flex-col gap-2 md:gap-4 lg:gap-6 text-xl md:text-2xl lg:text-4xl col-span-2">
+            {UIProjectData.map((project) => (
+              <Link
+                href={`/ui/${project.id}`}
                 key={project.id}
+                className={"flex justify-items-center relative"}
               >
-                {project.projectName}
-              </p>
-            </Link>
-          ))}
-        </nav>
+                {currentPageId === project.id ? (
+                  <i className="ri-arrow-right-line  absolute md:-left-10 -left-5"></i>
+                ) : (
+                  ""
+                )}
+                <p
+                  className={`t ${
+                    currentPageId === project.id ? "underline" : ""
+                  }`}
+                  key={project.id}
+                >
+                  {project.projectName}
+                </p>
+              </Link>
+            ))}
+          </nav>
+        </div>
 
-        <section className={"col-span-8 col-start-3 "}>{children}</section>
+        <section className={"md:col-span-8 md:col-start-3 col-span-full"}>
+          {children}
+        </section>
       </div>
     </div>
   );

@@ -16,11 +16,15 @@ export default function Project({ params }) {
 
   return (
     <div className={"grid grid-cols-6 gap-6 relative"}>
-      <div className={"col-span-2 text-base font-normal flex gap-2 flex-col"}>
+      <div
+        className={
+          "col-span-6 md:col-span-2 text-base font-normal flex gap-2 flex-col"
+        }
+      >
         <DynamicMDX />
       </div>
-      <div className={"col-span-4 flex flex-col gap-4 col-start-3"}>
-        {project.video && (
+      <div className={"col-span-6 md:col-span-4 flex flex-col gap-4"}>
+        {project?.video && (
           <iframe
             src={`https://www.youtube.com/embed/${project.video}`}
             title="YouTube video player"
