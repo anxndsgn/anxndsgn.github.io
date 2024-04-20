@@ -1,4 +1,5 @@
 import { IDEProjectData } from "@/Data/IDEProjectData";
+import dynamic from "next/dynamic";
 
 export async function generateStaticParams() {
   return IDEProjectData.map((post) => ({
@@ -11,12 +12,12 @@ export default function Project({ params }) {
     (project) => project.id.toString() === params.id
   );
 
+  const DynamicMDX = dynamic(() => import(`@/markdown/${project.id}.mdx`));
+
   return (
     <div className={"grid grid-cols-6 gap-6 relative"}>
       <div className={"col-span-2 text-base font-normal flex gap-2 flex-col"}>
-        {project.description.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
-        ))}
+        <DynamicMDX />
       </div>
       <div className={"col-span-4 flex flex-col gap-4 col-start-3"}>
         {project.video && (
