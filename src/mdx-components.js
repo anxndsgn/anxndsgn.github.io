@@ -6,7 +6,7 @@
 export function useMDXComponents(components) {
   return {
     // Allows customizing built-in components, e.g. to add styling.
-    h1: ({ children }) => <h1 className="text-2xl font-bold">{children}</h1>,
+    h1: ({ children }) => <h1 className="font-bold">{children}</h1>,
     a: ({ href, children }) => (
       <a className="underline font-semibold" href={href}>
         {children}
