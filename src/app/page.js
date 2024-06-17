@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
+'use client';
 
-import { useState } from "react";
-import Link from "next/link";
+import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const [isHover, setIsHover] = useState(false);
@@ -26,7 +26,7 @@ export default function Home() {
       <div className="flex flex-col gap-6 md:gap-12 text-2xl md:text-4xl ">
         <Link
           href={`/about`}
-          onMouseEnter={() => handleMouseEnter("about")}
+          onMouseEnter={() => handleMouseEnter('about')}
           onMouseLeave={handleMouseLeave}
           className="inline-flex w-fit hover:pointer-events-auto"
         >
@@ -36,7 +36,8 @@ export default function Home() {
           </h1>
         </Link>
 
-        <p className="">工业设计工程硕士在读</p>
+        <p>工业设计工程硕士在读。</p>
+        <p>“We shape our tools and thereafter our tools shape us”</p>
         <p className="flex gap-4 ">
           <a href="mailto:anxanxx@gmail.com" className="hover:underline">
             Email
@@ -48,33 +49,33 @@ export default function Home() {
         <h1 className=" font-bold">My Work</h1>
         <Link
           href={`ide`}
-          onMouseEnter={() => handleMouseEnter("ide")}
+          onMouseEnter={() => handleMouseEnter('ide')}
           onMouseLeave={handleMouseLeave}
           className="inline-flex w-fit hover:pointer-events-auto"
         >
           <h1>
             <span className="hover:underline hover:pr-2">
-              Industrial Design & Engineering{" "}
+              Industrial Design & Engineering{' '}
             </span>
             <i className="ri-arrow-right-line "></i>
           </h1>
         </Link>
         <Link
           href={`ui`}
-          onMouseEnter={() => handleMouseEnter("ui")}
+          onMouseEnter={() => handleMouseEnter('ui')}
           onMouseLeave={handleMouseLeave}
           className="inline-flex w-fit hover:pointer-events-auto"
         >
           <h1>
             <span className="hover:underline hover:pr-2">
-              Web & User Interface
+              Web/User Interface & Engineering
             </span>
             <i className="ri-arrow-right-line "></i>
           </h1>
         </Link>
         <Link
           href={`logo`}
-          onMouseEnter={() => handleMouseEnter("logo")}
+          onMouseEnter={() => handleMouseEnter('logo')}
           onMouseLeave={handleMouseLeave}
           className="inline-flex w-fit hover:pointer-events-auto"
         >
@@ -97,7 +98,7 @@ function BackImages({ hoveredElement, isImagesHidden }) {
   return (
     <div
       className={`background -z-10 absolute top-0 right-0 h-full ${
-        isImagesHidden ? "hidden" : ""
+        isImagesHidden ? 'hidden' : ''
       }`}
     >
       {hoveredElement && (
