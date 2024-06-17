@@ -51,10 +51,12 @@ const UIProjectData = [
     img: ['/imgs/pricing/01.png', '/imgs/pricing/02.png'],
   },
   {
-    projectName: 'Academic Template',
+    projectName: 'Academic Homepage',
     id: 'academic',
     description: [],
-    img: ['/imgs/pricing/01.png', '/imgs/pricing/02.png'],
+    img: [
+      'https://github.com/anxndsgn/academic-homepage-template/blob/main/public/screenshot.jpg?raw=true',
+    ],
   },
 ];
 export { UIProjectData };
